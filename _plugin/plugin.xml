@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-template"
+        version="1.0.0">
+    <name>Cordova Plugin Template</name>
+    <description></description>
+    <license>Apache 2.0</license>
+    <keywords></keywords>
+    <repo>https://github.com/disono/cordova-plugin-template.git</repo>
+    <issue>https://github.com/disono/cordova-plugin-template/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+
+            <!-- This is the window variable name you want, like window.PluginName -->
+            <clobbers target="CordovaPluginName" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CordovaPluginName">
+                <param name="android-package" value="disono.com.webmons.CordovaPluginName" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/disono/webmons/CordovaPluginName.java" target-dir="src/disono/com/webmons/" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+
+            <!-- This is the window variable name you want, like window.CordovaPluginName -->
+            <clobbers target="CordovaPluginName" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="CordovaPluginName">
+                <param name="ios-package" value="CordovaPluginName" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CordovaPluginName.h" />
+        <source-file src="src/ios/CordovaPluginName.m" />
+    </platform>
+</plugin>

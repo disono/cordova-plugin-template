@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-template",
+  "version": "1.0.0",
+  "description": "This is just template for creating a new plugin for Cordova.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disono/cordova-plugin-template.git"
+  },
+  "author": "Archie Disono",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/disono/cordova-plugin-template/issues"
+  },
+  "homepage": "https://github.com/disono/cordova-plugin-template#readme",
+  "cordova": {
+    "id": "cordova-plugin-template",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
